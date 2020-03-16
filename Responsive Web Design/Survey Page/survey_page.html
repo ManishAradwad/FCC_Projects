@@ -1,0 +1,60 @@
+<h1 id="title">FreeCodeCamp Survey Form</h1>
+
+<p id="description">Thank you for your time to fill this form</p>
+
+<form id="survey-form" action="/submit-fcc-form">
+  
+  <label id="name-label">Name</label>
+  <input id="name" type="text" placeholder="Enter Your Name" required>
+
+  <label id="email-label">Email</label>
+  <input id="email" type="email" placeholder="Enter Your Email ID" required>
+
+  <label id="number-label">Age</label>
+  <input id="number" type="number" min=18 max=99 placeholder="Age">
+
+  <label id="dropdown-label">Which option best decribes you current role?</label>
+  <select id="dropdown" name="role">
+    <option disable selected value>Select a Role</option>
+    <option value="student">Student</option>
+    <option value="developer">Developer</option>
+    <option value="teacher">Teacher</option>
+    <option value="full-time-learner">Full Time Learner</option> 
+  </select>
+  
+  <label id="radio">Would you recommend FreeCodeCamp to a friend?
+    <label>
+      <input type="radio" name="recommend">Definitely
+    </label>
+    <label>
+      <input type="radio" name="recommend">Maybe
+    </label>
+    <label>
+      <input type="radio" name="recommend">Not at all
+    </label>
+    <label>
+      <input type="radio" name="recommend">No way!
+    </label>
+  </label> 
+  
+  <label id="checkbox">What would you like to see improved?
+    <label>
+      <input type="checkbox" name="improve">Front End Projects
+    </label>
+    <label>
+      <input type="checkbox" name="improve">Back End Projects
+    </label>
+    <label>
+      <input type="checkbox" name="improve">Data Visualisation
+    </label>
+    <label>
+      <input type="checkbox" name="improve">Open Source Community
+    </label>
+    <label>
+      <input type="checkbox" name="improve">User Interface
+    </label>
+  </label>
+  
+  
+  
+</form>
