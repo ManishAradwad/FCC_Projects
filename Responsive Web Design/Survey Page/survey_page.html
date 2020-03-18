@@ -1,60 +1,76 @@
-<h1 id="title">FreeCodeCamp Survey Form</h1>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<p id="description">Thank you for your time to fill this form</p>
+<main id="main">
 
-<form id="survey-form" action="/submit-fcc-form">
-  
-  <label id="name-label">Name</label>
-  <input id="name" type="text" placeholder="Enter Your Name" required>
+  <div id="img-div">
+    <img id="image" src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+    <figcaption id="img-caption">Photo by <a href="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">Safar Safarov</a></figcaption>
+  </div>
 
-  <label id="email-label">Email</label>
-  <input id="email" type="email" placeholder="Enter Your Email ID" required>
+  <div class="container" id="header-container">
+    <header class="header">
+      <h1 id="title" class="text-center">FreeCodeCamp Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for your time to fill this form</p>
+    </header>
+  </div>
 
-  <label id="number-label">Age</label>
-  <input id="number" type="number" min=18 max=99 placeholder="Age">
+  <form id="survey-form" action="/submit-fcc-form">
 
-  <label id="dropdown-label">Which option best decribes you current role?</label>
-  <select id="dropdown" name="role">
-    <option disable selected value>Select a Role</option>
-    <option value="student">Student</option>
-    <option value="developer">Developer</option>
-    <option value="teacher">Teacher</option>
-    <option value="full-time-learner">Full Time Learner</option> 
-  </select>
-  
-  <label id="radio">Would you recommend FreeCodeCamp to a friend?
-    <label>
-      <input type="radio" name="recommend">Definitely
+    <label id="name-label">Name:</label>
+    <input id="name" type="text" placeholder="Enter Your Name" required>
+
+    <label id="email-label">Email:</label>
+    <input id="email" type="email" placeholder="Enter Your Email ID" required>
+
+    <label id="number-label">Age:</label>
+    <input id="number" type="number" min=18 max=99 placeholder="Age">
+
+    <label id="dropdown-label">Which option best decribes you current role?</label>
+    <select id="dropdown" name="role">
+      <option disable selected value>Select a Role</option>
+      <option value="student">Student</option>
+      <option value="developer">Developer</option>
+      <option value="teacher">Teacher</option>
+      <option value="full-time-learner">Full Time Learner</option>
+    </select>
+
+    <label id="radio">Would you recommend FreeCodeCamp to a friend?
+      <label>
+        <input type="radio" name="recommend" value="definitely">Definitely
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="maybe">Maybe
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="not-at-all">Not at all
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no-way">No way!
+      </label>
     </label>
-    <label>
-      <input type="radio" name="recommend">Maybe
+
+    <label id="checkbox">What would you like to see improved?
+      <label>
+        <input type="checkbox" name="improve" value="front-end-projects">Front End Projects
+      </label>
+      <label>
+        <input type="checkbox" name="improve" value="back-end-projects">Back End Projects
+      </label>
+      <label>
+        <input type="checkbox" name="improve" value="data-visualisation">Data Visualisation
+      </label>
+      <label>
+        <input type="checkbox" name="improve" value="open-source-community">Open Source Community
+      </label>
+      <label>
+        <input type="checkbox" name="improve" value="user-interface">User Interface
+      </label>
     </label>
-    <label>
-      <input type="radio" name="recommend">Not at all
+
+    <label id="textarea-label">Additional Comments:
+      <textarea placeholder="Enter your comments here..."></textarea>
     </label>
-    <label>
-      <input type="radio" name="recommend">No way!
-    </label>
-  </label> 
-  
-  <label id="checkbox">What would you like to see improved?
-    <label>
-      <input type="checkbox" name="improve">Front End Projects
-    </label>
-    <label>
-      <input type="checkbox" name="improve">Back End Projects
-    </label>
-    <label>
-      <input type="checkbox" name="improve">Data Visualisation
-    </label>
-    <label>
-      <input type="checkbox" name="improve">Open Source Community
-    </label>
-    <label>
-      <input type="checkbox" name="improve">User Interface
-    </label>
-  </label>
-  
-  
-  
-</form>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</main>
