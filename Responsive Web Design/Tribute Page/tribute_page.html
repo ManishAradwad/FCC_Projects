@@ -1,47 +1,82 @@
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|PT+Sans+Narrow|Ubuntu" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<div class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 style="font-family:'Lobster', cursive"
-            class="text-center">Leonardo Da Vinci</h1>
-        <h2 style="font-family:'Ubuntu', sans-serif"
-            class="text-center">The Greatest Artist Of All Time</h2>
-      </div>
-      <div class="thumbnail">
-        <img class="border"
-             style="width:700px"
-             src="https://www.biography.com/.image/t_share/MTIwNjA4NjMzNTM4NTEyMzk2/leonardo-da-vinci-40396-1-402.jpg"
-             alt="Leonardo Da Vinci">
-        <div class="caption text-center">Leonardo Da Vinci</div>
-      </div>
-      <div class="col-xs-12">
-      <h2 style="font-family:Monospace";
-          class="text-center">Here's a timeline of LDV's life:</h2>
-        <ul style="font-family: 'PT Sans Narrow', sans-serif;">
-          <li><strong>1452</strong> - Leonardo is born on April 15 in the village of Anchiano, near the town of Vinci.</li>
-          <li><strong>1467</strong> - At 15 Leonardo is sent to Florence to work as apprentice to Andrea De Verrocchio. </li>
-          <li><strong>1472</strong> - 20 year-old Leonardo is accepted into the painters' guild of Florence.</li>
-          <li><strong>1476</strong> - Leonardo is accused of sodomy; he is publicly humiliated although the charges are later dropped.</li>
-          <li><strong>1478</strong> - The Annunciation is painted. The work, initially credited to Da Vinci, is now believed to have been painted by Lorenzo di Credi.</li>
-          <li><strong>1481</strong> - Leonardo begins work on The Adoration of the Magi, an altarpiece for the Monastery of San Donato at Scopeto.</li>
-          <li><strong>1482</strong> - Leonardo moves to Milan to work in the service of the city's duke, Ludovico Sforza. He gains the title of "painter and engineer of the duke.</li>
-          <li><strong>1483</strong> - Leonardo paints the Virgin of the Rocks.</li>
-          <li><strong>1485</strong> - Leonardo paints Lady with an Ermine.</li>
-          <li><strong>1495</strong> - Leonardo begins work on The Last Supper in the refectory of the convent of Santa Maria delle Grazie in Milan.</li>
-          <li><strong>1498</strong> - The Last Supper is completed.</li>
-        </ul>
-      </div>
-      <div class="back text-center"><blockquote><p style="font-family:'Lobster',cursive;">"Simplicity is the ultimate sophistication."</p>
-        <footer><cite>Leonardo Da Vinci</cite></footer>
-      </blockquote></div>
-      <h3 class="text-center"
-          style="font-family: 'Ubuntu', sans-serif;">Read More about this Great Personality <a   href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
-target="_blank">HERE</a></h3>
-    </div>
+<main id="main">
+  <div class="container" id="header-container">
+    <header class="header">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for your time to fill this form</p>
+    </header>
   </div>
-  <p class="text-center"
-     style="font-family: 'Indie Flower', cursive; font-size:30px;"><em>Written & Coded By <a href="https://www.freecodecamp.org/maradwad"
-                               target="_blank">Manish</a></em></p>
-</div>
+
+  <container>
+    <form id="survey-form" action="/submit-fcc-form">
+
+      <label id="name-label">Name:<div>
+          <input id="name" type="text" placeholder="Enter Your Name" required></div></label>
+
+      <label id="email-label">Email:<div>
+          <input id="email" type="email" placeholder="Enter Your Email ID" required></div></label>
+
+      <label id="number-label">Age:<div>
+          <input id="number" type="number" min=18 max=99 placeholder="Age"></div></label>
+
+      <label id="dropdown-label">Which option best decribes you current role?<div>
+          <select id="dropdown" name="role">
+            <option disable selected value>Select a Role</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="teacher">Teacher</option>
+            <option value="full-time-learner">Full Time Learner</option>
+          </select></div></label>
+
+      <label id="radio">Would you recommend FreeCodeCamp to a friend?
+        <label>
+          <div>
+            <input type="radio" name="recommend" value="definitely">Definitely</div>
+        </label>
+        <label>
+          <div>
+            <input type="radio" name="recommend" value="maybe">Maybe</div>
+        </label>
+        <label>
+          <div>
+            <input type="radio" name="recommend" value="not-at-all">Not at all</div>
+        </label>
+        <label>
+          <div>
+            <input type="radio" name="recommend" value="no-way">No way!</div>
+        </label>
+      </label>
+
+      <label id="checkbox">What would you like to see improved?
+        <label>
+          <div>
+            <input type="checkbox" name="improve" value="front-end-projects">Front End Projects</div>
+        </label>
+        <label>
+          <div>
+            <input type="checkbox" name="improve" value="back-end-projects">Back End Projects</div>
+        </label>
+        <label>
+          <div>
+            <input type="checkbox" name="improve" value="data-visualisation">Data Visualisation</div>
+        </label>
+        <label>
+          <div>
+            <input type="checkbox" name="improve" value="open-source-community">Open Source Community</div>
+        </label>
+        <label>
+          <div>
+            <input type="checkbox" name="improve" value="user-interface">User Interface</div>
+        </label>
+      </label>
+
+      <label id="textarea-label">Additional Comments:<div>
+          <textarea id="textarea" placeholder="Enter your comments here..."></textarea></div>
+      </label>
+
+      <div id="submit-btn">
+        <button type="submit" id="submit">Submit</button></div>
+    </form>
+  </container>
+</main>
