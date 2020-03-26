@@ -1,9 +1,46 @@
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-#container {
-max-width: 100%;
+h1 {
+  text-align: center;
 }
-  
+
+#description {
+  text-align: center;
+  line-height: 25px;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+}
+
+#textarea {
+  width: 400px;
+  height: 100px;
+}
+
+#submit-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  margin-bottom: 10px;
+}
+
+#radio-div {
+  margin-bottom: 10px;
+}
+
+#name, #email, #number, #radio {
+  width : 350px;
+}
+
+#checkbox-div {
+  margin-bottom: 10px;
+}
+
+label {
+  line-height: 25px;
+}
